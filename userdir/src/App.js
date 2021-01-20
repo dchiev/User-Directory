@@ -1,6 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import Wrapper from "./components/Wrapper";
+import Table from "./components/Table";
+import Row from "./components/Row";
 function App() {
   return (
     <div className="App">
