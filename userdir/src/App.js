@@ -1,15 +1,9 @@
 import React from "react";
 import "./App.css";
-import Nav from "./components/Nav";
-import Row from "./components/Row";
+import Container from "./components/Container";
 
 function App() {
-  return (
-    <div className="App">
-      <Nav />
-      <Row />
-    </div>
-  );
+  return <Container />;
 }
 
 export default App;
