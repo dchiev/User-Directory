@@ -4,7 +4,7 @@
 
 <img src = "readme_assets\screenshot.png" width = "800px"></img>
 
-Deployed Application:
+Deployed Application: https://dchiev.github.io/User-Directory/
 
 GitHub Repo: https://github.com/dchiev/User-Directory
 
