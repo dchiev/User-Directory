@@ -1,9 +1,30 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import Table from "./Table";
 import Nav from "./Nav";
 import API from "../utils/API";
 
-class Container extends Component {
+function Container() {
+  const [employees, setEmployees] = useState([]);
+  useEffect(() => {
+    console.log("mounted");
+    API.findEmployees()
+      .then((results) => setEmployees(results.data.results))
+      .catch((err) => console.log(err));
+  }, []);
+  useEffect(() => {
+    console.log("rendered");
+  });
+  console.log("anything");
+
+  return (
+    <div>
+      <Nav />
+      <Table results={employees} setEmployees={setEmployees} />
+    </div>
+  );
+}
+
+/* class Container2 extends Component {
   state = {
     employees: [],
   };
@@ -26,5 +47,5 @@ class Container extends Component {
     );
   }
 }
-
+ */
 export default Container;
