@@ -11,7 +11,11 @@ function Table(props) {
       <thead>
         <tr>
           <th scope="col">First</th>
-          <th scope="col">Last</th>
+          <th
+            scope="col" // onClick={props.sort.result}
+          >
+            Last
+          </th>
           <th scope="col">Email</th>
           <th scope="col">City</th>
           <th scope="col">Image</th>
